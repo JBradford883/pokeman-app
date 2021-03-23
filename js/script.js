@@ -8,7 +8,7 @@ let pokemonList = [
   {
     name: "Pikachu",
     height: 0.4,
-    type: "electric"
+    type: ["electric"]
   },
 
   {
@@ -20,7 +20,7 @@ let pokemonList = [
   {
     name: "Squirtle",
     height: 0.5,
-    type: "water"
+    type: ["water"]
   },
 
   {
