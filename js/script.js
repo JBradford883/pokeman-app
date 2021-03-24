@@ -26,7 +26,7 @@ let pokemonList = [
   {
     name: "Zapdos",
     height: 1.6,
-    type: ["elecric","flying"]
+    type: ["electric","flying"]
   }
 ];
 
