@@ -1,3 +1,4 @@
+//Array of Pokemon Name,Height,Type
 let pokemonList = [
   {
     name: "Charizard",
@@ -30,6 +31,7 @@ let pokemonList = [
   }
 ];
 
+// List of Pokemon name and height
 for (let i = 0; i < pokemonList.length; i++){
   if (pokemonList[i].height > 1.8){
     document.write(`${pokemonList[i].name} (height: ${pokemonList[i].height}) - Wow! That is a big Pokemon!<br>`)
