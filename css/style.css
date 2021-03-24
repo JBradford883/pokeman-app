@@ -2,3 +2,8 @@ body {
   background-color: #cc0000;
 }
 
+.page-header {
+  display: flex;
+  width: 400px;
+  padding: 10px;
+}
