@@ -33,8 +33,8 @@ let pokemonList = [
 
 // List of Pokemon name and height
 for (let i = 0; i < pokemonList.length; i++){
-  if (pokemonList[i].height > 1.8){
-    document.write(`${pokemonList[i].name} (height: ${pokemonList[i].height}m) - Wow! That is a big Pokemon!<br>`)
+  if (pokemonList[i].height > 1.8) {
+  document.write(`<p> ${pokemonList[i].name} - ( height: ${pokemonList[i].height}m ) -Wow! That is a big Pokemon!</p>`);
   }
-  else { document.write(`${pokemonList[i].name} (height: ${pokemonList[i].height}m)<br>`)}
+  else {document.write(`<p> ${pokemonList[i].name} - ( height: ${pokemonList[i].height}m )</p>`);}
 }
