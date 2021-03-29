@@ -31,10 +31,10 @@ let pokemonList = [
   }
 ];
 
-// forEach loop for Pokemon List 
+// Added forEach loop for Pokemon List
 function myLoopFunction(pokemon) {
   if (pokemon.height > 1.8){
-  document.write(pokemon.name + ' - ' + pokemon.height + ' m - WOW - That is a big Pokemon! <br>');
+  document.write(pokemon.name + ' - ' + pokemon.height + ' m - Wow! That is a big Pokemon! <br>');
 }else {document.write(pokemon.name + ' - ' + pokemon.height + ' m <br>')
 }
 }
