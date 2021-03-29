@@ -31,10 +31,12 @@ let pokemonList = [
   }
 ];
 
-// List of Pokemon name and height
-for (let i = 0; i < pokemonList.length; i++){
-  if (pokemonList[i].height > 1.8) {
-  document.write(`<p> ${pokemonList[i].name} - ( height: ${pokemonList[i].height}m ) -Wow! That is a big Pokemon!</p>`);
-  }
-  else {document.write(`<p> ${pokemonList[i].name} - ( height: ${pokemonList[i].height}m )</p>`);}
+// forEach loop for Pokemon List 
+function myLoopFunction(pokemon) {
+  if (pokemon.height > 1.8){
+  document.write(pokemon.name + ' - ' + pokemon.height + ' m - WOW - That is a big Pokemon! <br>');
+}else {document.write(pokemon.name + ' - ' + pokemon.height + ' m <br>')
 }
+}
+
+pokemonList.forEach(myLoopFunction);
