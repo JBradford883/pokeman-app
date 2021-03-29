@@ -1,4 +1,5 @@
 //Array of Pokemon Name,Height,Type
+let pokemonRepository = (function () {
 let pokemonList = [
   {
     name: "Charizard",
@@ -31,12 +32,28 @@ let pokemonList = [
   }
 ];
 
+  function add(pokemon) {
+    pokemonList.push(pokemon);
+  }
+
+  function getAll() {
+    return pokemonList;
+  }
+
+  return {
+    add: add,
+    getAll: getAll
+  };
+})();
+
+
 // Added forEach loop for Pokemon List
-function pokemonDescription(pokemon) {
+function pokemonDescription(pokemonList) {
   if (pokemon.height > 1.8){
   document.write(pokemon.name + ' - ' + pokemon.height + ' m - Wow! That is a big Pokemon! <br>');
 }else {document.write(pokemon.name + ' - ' + pokemon.height + ' m <br>')
 }
 }
 
-pokemonList.forEach(pokemonDescription);
+pokemonRepository.add({ name: 'Wartorle', height: 1, type: 'water' });
+console.log(pokemonRepository.getAll());
