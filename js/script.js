@@ -56,4 +56,4 @@ function pokemonDescription(pokemonList) {
 }
 
 pokemonRepository.add({ name: 'Wartorle', height: 1, type: 'water' });
-console.log(pokemonRepository.getAll());
+document.write(pokemonRepository.getAll());
