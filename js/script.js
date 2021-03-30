@@ -55,5 +55,6 @@ function pokemonDescription(pokemonList) {
 }
 }
 
+pokemonList.forEach(pokemonDescription);
 pokemonRepository.add({ name: 'Wartorle', height: 1, type: 'water' });
 document.write(pokemonRepository.getAll());
