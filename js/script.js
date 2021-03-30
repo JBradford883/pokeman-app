@@ -51,9 +51,9 @@ return {
 // Added forEach loop for Pokemon List
 function pokemonDescription(pokemon) {
   if (pokemon.height > 1.8) {
-    document.write(pokemon.name + ' - ' + pokemon.height + 'm - Wow! That is a big Pokemon! <br>');
+    document.write(`<p class="pokemon-list"> ${pokemon.name} - ${pokemon.height}m - Wow! That is a big Pokemon!</p>`);
   }else {
-    document.write(pokemon.name + ' - ' + pokemon.height + 'm <br>')
+    document.write(`<p class="pokemon-list"> ${pokemon.name} - ${pokemon.height}m</p>`)
   }
 }
 
