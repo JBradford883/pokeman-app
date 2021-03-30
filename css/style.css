@@ -16,3 +16,10 @@ body {
   width: 300px;
   padding: 10px;
 }
+
+.pokemon-list {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  line-height: .5;
+  font-weight: 400;
+}
