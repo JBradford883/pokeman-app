@@ -1,6 +1,6 @@
 //Array of Pokemon Name,Height,Type
 
-let pokemonRepository = (function () {
+let pokemonRepository = (function createPokemonRepository () {
   let pokemonList = [
     {
       name: "Charizard",
