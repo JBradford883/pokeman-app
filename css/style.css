@@ -18,4 +18,5 @@ body {
 }
 
 .pokemon-list {
+  list-style: none;
 }
