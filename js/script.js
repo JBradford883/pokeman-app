@@ -43,24 +43,14 @@ function add(pokemon) {
 
 return {
   add: add,
-  getAll: getAll
   getAll: getAll,
   addListItem: addListItem
 }
 
 })();
 
-// Added forEach loop for Pokemon List
-function pokemonDescription(pokemon) {
-  if (pokemon.height > 1.8) {
-    document.write(`<p class="pokemon-list"> ${pokemon.name} - ${pokemon.height}m - Wow! That is a big Pokemon!</p>`);
-  } else {
-    document.write(`<p class="pokemon-list"> ${pokemon.name} - ${pokemon.height}m</p>`)
-  }
-}
 
 pokemonRepository.add( {name: 'Wartorle', height: 1, type: 'water'});
-pokemonRepository.getAll().forEach(pokemonDescription);
 
 pokemonRepository.getAll().forEach(function (pokemon){
   pokemonRepository.addListItem(pokemon);
