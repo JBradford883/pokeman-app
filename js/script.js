@@ -52,7 +52,7 @@ return {
 function pokemonDescription(pokemon) {
   if (pokemon.height > 1.8) {
     document.write(`<p class="pokemon-list"> ${pokemon.name} - ${pokemon.height}m - Wow! That is a big Pokemon!</p>`);
-  }else {
+  } else {
     document.write(`<p class="pokemon-list"> ${pokemon.name} - ${pokemon.height}m</p>`)
   }
 }
