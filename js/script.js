@@ -44,6 +44,8 @@ function add(pokemon) {
 return {
   add: add,
   getAll: getAll
+  getAll: getAll,
+  addListItem: addListItem
 }
 
 })();
@@ -59,3 +61,7 @@ function pokemonDescription(pokemon) {
 
 pokemonRepository.add( {name: 'Wartorle', height: 1, type: 'water'});
 pokemonRepository.getAll().forEach(pokemonDescription);
+
+pokemonRepository.getAll().forEach(function (pokemon){
+  pokemonRepository.addListItem(pokemon);
+});
