@@ -34,11 +34,11 @@ let pokemonRepository = (function createPokemonRepository () {
   ];
 
 function getAll() {
-  return pokemonList;
+  return repository;
 }
 
 function add(pokemon) {
-  pokemonList.push(pokemon);
+  repository.push(pokemon);
 }
 
 return {
