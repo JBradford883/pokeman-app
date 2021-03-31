@@ -1,7 +1,7 @@
 //Array of Pokemon Name,Height,Type
 
 let pokemonRepository = (function createPokemonRepository () {
-  let pokemonList = [
+  let repository = [
     {
       name: "Charizard",
       height: 1.7,
