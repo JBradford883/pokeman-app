@@ -11,9 +11,6 @@ function add(pokemon) {
     return pokemonList;
   }
 
-function showDetails(pokemon){
-    console.log(showDetails);
-}
   //Creates List and Buttons in the DOM
   function addListItem(pokemon){
     let pokemonList = document.querySelector('.pokemon-list');
