@@ -72,8 +72,6 @@ function addListItem(pokemon){
 
 })();
 
-//Adds Pokemon to main Array in the IIFE
-pokemonRepository.add( {name: 'Wartorle', height: 1, type: 'water'});
 
 
 pokemonRepository.getAll().forEach(function (pokemon){
