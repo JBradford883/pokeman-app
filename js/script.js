@@ -16,21 +16,26 @@ function add(pokemon) {
 function showDetails(pokemon){
     console.log(showDetails);
 }
+  //Creates List and Buttons in the DOM
+  function addListItem(pokemon){
+    let pokemonList = document.querySelector('.pokemon-list');
 
-//Creates List and Buttons in the DOM
-function addListItem(pokemon){
-  let pokemonList = document.querySelector('.pokemon-list');
+    let listPokemon = document.createElement('li');
 
-  let listPokemon = document.createElement('li');
+    let button = document.createElement('button');
 
-  let button = document.createElement('button');
+    //Adds Pokemon Name to Buttons
+    button.innerText = pokemon.name;
+    button.classList.add('button-class');
 
-  //Adds Pokemon Name to Buttons
-  button.innerText = pokemon.name;
-  button.classList.add('button-class');
+    listPokemon.appendChild(button);
+    pokemonList.appendChild(listPokemon);
 
-  listPokemon.appendChild(button);
-  pokemonList.appendChild(listPokemon);
+    // Event Listener on Button click
+    button.addEventListener('click', function (event) {
+      showDetails(pokemon);
+    });
+  }
 
   // Event Listener on Button click
   button.addEventListener('click', function (event) {
