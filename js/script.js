@@ -1,5 +1,3 @@
-//Array of Pokemon Name,Height,Type
-
 let pokemonRepository = (function createPokemonRepository () {
   let repository = [
     {
