@@ -54,6 +54,10 @@ function addListItem(pokemon){
   listPokemon.appendChild(button);
   pokemonList.appendChild(listPokemon);
   // Event Listener on Button click
+  button.addEventListener('click', function (event) {
+    console.log(pokemon.name);
+  });
+
 }
 
 return {
