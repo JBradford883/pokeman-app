@@ -3,6 +3,7 @@ let pokemonRepository = (function createPokemonRepository () {
     }
   ];
   let pokemonList = [];
+  let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
 
 function getAll() {
   return repository;
