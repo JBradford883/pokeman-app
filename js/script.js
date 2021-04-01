@@ -5,13 +5,13 @@ let pokemonRepository = (function createPokemonRepository () {
   let pokemonList = [];
   let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
 
-function getAll() {
-  return repository;
-}
 
 function add(pokemon) {
   repository.push(pokemon);
 }
+  function getAll() {
+    return pokemonList;
+  }
 
 function showDetails(pokemon){
     console.log(showDetails);
