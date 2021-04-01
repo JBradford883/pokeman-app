@@ -1,7 +1,5 @@
 //IIFE with Pokemon Repository
 let pokemonRepository = (function createPokemonRepository () {
-    }
-  ];
   let pokemonList = [];
   let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
 
@@ -77,6 +75,14 @@ function showDetails(pokemon){
 
 })();
 
+  return {
+    add: add,
+    getAll: getAll,
+    addListItem: addListItem,
+    loadList: loadList,
+    loadDetails: loadDetails,
+    showDetails: showDetails
+  }
 
 
 pokemonRepository.loadList().then(function () {
