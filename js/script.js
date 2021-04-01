@@ -49,7 +49,6 @@ function add(pokemon) {
     })
   }
 
-}
   //Loads List Details
   function loadDetails(item) {
     let url = item.detailsUrl;
@@ -66,7 +65,6 @@ function add(pokemon) {
     });
   }
 
-})();
   function showDetails(item){
     pokemonRepository.loadDetails(item).then(function(){
       console.log(item);
@@ -82,6 +80,7 @@ function add(pokemon) {
     showDetails: showDetails
   }
 
+})();
 
 pokemonRepository.loadList().then(function () {
   pokemonRepository.getAll().forEach(function (pokemon) {
