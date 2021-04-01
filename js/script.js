@@ -32,10 +32,6 @@ function add(pokemon) {
     });
   }
 
-  // Event Listener on Button click
-  button.addEventListener('click', function (event) {
-    console.log(pokemon.name);
-  });
   //Loads List of Pokemon
   function loadList() {
     return fetch(apiUrl).then(function (response) {
