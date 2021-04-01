@@ -61,11 +61,6 @@ function addListItem(pokemon){
       return response.json();
     }).then(function (details) {
 
-return {
-  add: add,
-  getAll: getAll,
-  addListItem: addListItem
-}
       //Add the details to the item
       item.imageUrl = details.sprites.front_default;
       item.height = details.height;
