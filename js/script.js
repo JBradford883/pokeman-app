@@ -2,6 +2,7 @@
 let pokemonRepository = (function createPokemonRepository () {
     }
   ];
+  let pokemonList = [];
 
 function getAll() {
   return repository;
