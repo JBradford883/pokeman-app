@@ -36,6 +36,22 @@ function addListItem(pokemon){
   button.addEventListener('click', function (event) {
     console.log(pokemon.name);
   });
+  //Loads List of Pokemon
+  function loadList() {
+    return fetch(apiUrl).then(function (response) {
+      return response.json();
+    }).then(function (json) {
+      json.results.forEach(function (item) {
+        let pokemon = {
+          name: item.name,
+          detailsUrl: item.url
+        };
+        add(pokemon);
+      });
+    }).catch(function (e) {
+      console.error(e);
+    })
+  }
 
 }
 
