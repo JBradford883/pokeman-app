@@ -51,12 +51,14 @@ function addListItem(pokemon){
   let listPokemon = document.createElement('li');
 
   let button = document.createElement('button');
+
   //Adds Pokemon Name to Buttons
   button.innerText = pokemon.name;
   button.classList.add('button-class');
 
   listPokemon.appendChild(button);
   pokemonList.appendChild(listPokemon);
+
   // Event Listener on Button click
   button.addEventListener('click', function (event) {
     console.log(pokemon.name);
@@ -72,9 +74,9 @@ return {
 
 })();
 
-
 //Adds Pokemon to main Array in the IIFE
 pokemonRepository.add( {name: 'Wartorle', height: 1, type: 'water'});
+
 
 pokemonRepository.getAll().forEach(function (pokemon){
   pokemonRepository.addListItem(pokemon);
