@@ -11,6 +11,13 @@ let pokemonRepository = (function createPokemonRepository () {
     return pokemonList;
   }
 
+  //Opens Pokemon Modal
+  function pokemonListListener(button, pokemon) {
+    button.addEventListener('click', function () {
+      showDetails(pokemon);
+    });
+  }
+
   //Creates List and Buttons in the DOM
   function addListItem(pokemon){
     let pokemonList = document.querySelector('.pokemon-list');
@@ -25,11 +32,6 @@ let pokemonRepository = (function createPokemonRepository () {
 
     listPokemon.appendChild(button);
     pokemonList.appendChild(listPokemon);
-
-    // Event Listener on Button click
-    button.addEventListener('click', function (event) {
-      showDetails(pokemon);
-    });
   }
 
   //Loads List of Pokemon
