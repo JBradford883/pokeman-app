@@ -36,7 +36,7 @@ ul {
 }
 
 .container h1 {
-  font-family: var(--primary-font);
+  font-family: var(--headline-font);
   font-weight: var(--headline-weight);
   font-size: 25px;
   color: #000;
@@ -111,10 +111,9 @@ ul {
 
 .modal h1 {
   color: #333;
-  font-family: var(--primary-font);
-  font-weight: var(--headline-weight);
   font-size: 50px;
   line-height: 45px;
+  font-family: var(--headline-font);
   margin-top: 10px;
 }
 
