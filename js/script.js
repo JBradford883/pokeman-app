@@ -30,6 +30,7 @@ let pokemonRepository = (function createPokemonRepository () {
 
     listPokemon.appendChild(button);
     pokemonList.appendChild(listPokemon);
+    pokemonListListener(button, pokemon);
   }
 
   //Loads List of Pokemon
