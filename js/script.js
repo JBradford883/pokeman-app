@@ -21,9 +21,7 @@ let pokemonRepository = (function createPokemonRepository () {
   //Creates List and Buttons in the DOM
   function addListItem(pokemon){
     let pokemonList = document.querySelector('.pokemon-list');
-
     let listPokemon = document.createElement('li');
-
     let button = document.createElement('button');
 
     //Adds Pokemon Name to Buttons
