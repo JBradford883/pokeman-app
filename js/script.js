@@ -65,10 +65,6 @@ let pokemonRepository = (function createPokemonRepository () {
     });
   }
 
-  function showDetails(item){
-    pokemonRepository.loadDetails(item).then(function(){
-      console.log(item);
-    });
   // modal functions
   function showDetails(pokemon){
     loadDetails(pokemon).then(function () {
