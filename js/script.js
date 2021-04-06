@@ -140,6 +140,7 @@ modalContainer.addEventListener('click', (e) => {
 
 })();
 
+//Displays Pokedex on the Website
 pokemonRepository.loadList().then(function () {
   pokemonRepository.getAll().forEach(function (pokemon) {
     pokemonRepository.addListItem(pokemon);
