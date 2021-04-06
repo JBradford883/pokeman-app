@@ -68,7 +68,7 @@ let pokemonRepository = (function createPokemonRepository () {
     });
   }
 
-  // modal functions
+  // Modal Functions
   function showDetails(pokemon){
     loadDetails(pokemon).then(function () {
     modalContainer.innerHTML = '';
@@ -82,24 +82,24 @@ let pokemonRepository = (function createPokemonRepository () {
     closeButtonElement.innerText = 'Close';
     closeButtonElement.addEventListener('click', hideDetails);
 
-    //Pokemon Name
+    // Pokemon Name
     let nameElement = document.createElement('h1');
     nameElement.innerText = pokemon.name;
 
-    //Pokemon Image
+    // Pokemon Image
     let imageElement = document.createElement('img');
     imageElement.src = pokemon.imageUrl;
     imageElement.alt = pokemon.name;
 
-    //Pokemon Height
+    // Pokemon Height
     let heightElement = document.createElement('p');
     heightElement.innerText = `Height: ${pokemon.height}m`;
 
-    //Pokemon Weight
+    // Pokemon Weight
     let weightElement = document.createElement('p');
     weightElement.innerText = `Weight: ${pokemon.weight}kg`;
 
-    //Append Elements
+    // Append Elements
     modal.appendChild(closeButtonElement);
     modal.appendChild(nameElement);
     modal.appendChild(heightElement);
@@ -115,6 +115,7 @@ function hideDetails() {
   modalContainer.classList.remove('is-visible');
 }
 
+// Event Listener to close Modal with Escape
 window.addEventListener('keydown', (e) => {
   if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
     hideDetails();
@@ -139,7 +140,7 @@ modalContainer.addEventListener('click', (e) => {
 
 })();
 
-//Displays Pokedex on the Website
+// Displays Pokedex on the Website
 pokemonRepository.loadList().then(function () {
   pokemonRepository.getAll().forEach(function (pokemon) {
     pokemonRepository.addListItem(pokemon);
