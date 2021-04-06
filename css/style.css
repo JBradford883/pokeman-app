@@ -76,7 +76,6 @@ ul {
 	text-decoration: none;
 	padding: 5px;
 	border-radius: 3px;
-	border-bottom: 3px solid #ccc;
 }
 
 .button-class:hover, .button:hover, .button-class:focus, .button:focus {
