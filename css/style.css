@@ -65,6 +65,7 @@ ul {
 }
 
 .button-class {
+  text-transform: capitalize;
   font-size: 25px;
   font-family: var(--headline-font);
   font-weight: var(--body-weight);
@@ -109,6 +110,7 @@ ul {
 }
 
 .modal h1 {
+  text-transform: capitalize;
   color: #333;
   font-family: var(--headline-font);
   font-weight: 600;
