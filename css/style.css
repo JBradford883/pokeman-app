@@ -12,6 +12,12 @@ body {
   line-height: 1.5;
 }
 
+.wrapper {
+  display: inline-block;
+  width: 900px;
+  background-color: #adadad;
+}
+
 .page-header {
   display: flex;
   width: 300px;
@@ -26,6 +32,11 @@ body {
   width: 200px;
   border: none;
   padding: 16px 32px;
+.button-class:hover, .button:hover, .button-class:focus, .button:focus {
+	cursor:pointer;
+	border-bottom:3px solid #333;
+}
+
   text-align: center;
   text-decoration: none;
   display: inline-block;
