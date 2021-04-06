@@ -49,6 +49,8 @@ body {
   display: flex;
   width: 300px;
   padding: 10px;
+.page-header__logo{
+  width: 500px;
 }
 
 .pokemon-list {
