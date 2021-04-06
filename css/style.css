@@ -1,3 +1,9 @@
+:root {
+  --primary-font: 'Roboto', sans-serif;
+  --body-weight: 400;
+  --headline-weight: 700;
+}
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
