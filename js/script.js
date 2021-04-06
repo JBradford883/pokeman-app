@@ -56,7 +56,7 @@ let pokemonRepository = (function createPokemonRepository () {
       return response.json();
     }).then(function (details) {
 
-      //Add the details to the item
+      //Add Details to the item
       item.imageUrl = details.sprites.front_default;
       item.height = details.height;
       item.types = details.types;
