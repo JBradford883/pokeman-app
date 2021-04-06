@@ -66,8 +66,8 @@ ul {
 }
 
 .button-class {
-  font-size: 20px;
-  font-family: var(--primary-font);
+  font-size: 25px;
+  font-family: var(--headline-font);
   font-weight: var(--body-weight);
   width: 350px;
   margin: 5px;
