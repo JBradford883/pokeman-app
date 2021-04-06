@@ -18,6 +18,28 @@ body {
   background-color: #adadad;
 }
 
+.container {
+  display: block;
+  text-align: center;
+  margin:0 auto;
+  padding:10px;
+}
+
+.container h1 {
+  font-family: var(--primary-font);
+  font-weight: var(--headline-weight);
+  font-size: 25px;
+  color: #000;
+}
+
+.main {
+  margin-top: 30px;
+  width: 550px;
+  display: inline-block;
+  background-color: #cc0000;
+  border-radius: 5px;
+}
+
 .page-header {
   display: flex;
   width: 300px;
