@@ -29,9 +29,19 @@ body {
 }
 
 .button-class {
-  width: 200px;
+  font-size: 20px;
+  font-family: var(--primary-font);
+  font-weight: var(--body-weight);
+  width: 350px;
+  margin: 5px;
   border: none;
-  padding: 16px 32px;
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 3px;
+	border-bottom: 3px solid #ccc;
+}
+
 .button-class:hover, .button:hover, .button-class:focus, .button:focus {
 	cursor:pointer;
 	border-bottom:3px solid #333;
@@ -60,6 +70,7 @@ body {
 	width:250px;
 	display:block;
 	margin:0 auto;
+}
 
 .modal h1 {
   color: #333;
