@@ -6,17 +6,28 @@
 }
 
 body {
+  background-color: #ccc;
   font-family: var(--headline-font);
 }
 
+.pokemon-logo {
+  height: 70px;
 }
 
+.btn {
   text-transform: capitalize;
   font-size: 25px;
   font-family: var(--headline-font);
 }
 
+.list-group {
   font-family: var(--headline-font);
+  margin: 20px auto;
 }
 
+.modal-body {
+  font-size: 30px;
+  line-height: 20px;
+  margin: 20px auto;
+  text-align: center;
 }
