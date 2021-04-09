@@ -2,7 +2,6 @@
 let pokemonRepository = (function createPokemonRepository () {
   let pokemonList = [];
   let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
-  let modalContainer = document.querySelector('#modal-container');
 
   function add(pokemon) {
     pokemonList.push(pokemon);
@@ -10,13 +9,6 @@ let pokemonRepository = (function createPokemonRepository () {
 
   function getAll() {
     return pokemonList;
-  }
-
-  //Opens Pokemon Modal
-  function pokemonListListener(button, pokemon) {
-    button.addEventListener('click', function () {
-      showDetails(pokemon);
-    });
   }
 
   //Creates List and Buttons in the DOM
@@ -68,66 +60,10 @@ let pokemonRepository = (function createPokemonRepository () {
     });
   }
 
-  // Modal Functions
-  function showDetails(pokemon){
-    loadDetails(pokemon).then(function () {
-    modalContainer.innerHTML = '';
 
-    let modal = document.createElement('div');
-    modal.classList.add('modal');
-
-    // Close Button
-    let closeButtonElement = document.createElement('button');
-    closeButtonElement.classList.add('modal-close');
-    closeButtonElement.innerText = 'Close';
-    closeButtonElement.addEventListener('click', hideDetails);
-
-    // Pokemon Name
-    let nameElement = document.createElement('h1');
-    nameElement.innerText = pokemon.name;
-
-    // Pokemon Image
-    let imageElement = document.createElement('img');
-    imageElement.src = pokemon.imageUrl;
-    imageElement.alt = pokemon.name;
-
-    // Pokemon Height
-    let heightElement = document.createElement('p');
-    heightElement.innerText = `Height: ${pokemon.height}m`;
-
-    // Pokemon Weight
-    let weightElement = document.createElement('p');
-    weightElement.innerText = `Weight: ${pokemon.weight}kg`;
-
-    // Append Elements
-    modal.appendChild(closeButtonElement);
-    modal.appendChild(nameElement);
-    modal.appendChild(heightElement);
-    modal.appendChild(weightElement);
-    modal.appendChild(imageElement);
-    modalContainer.appendChild(modal);
-
-    modalContainer.classList.add('is-visible');
-  });
 }
 
-function hideDetails() {
-  modalContainer.classList.remove('is-visible');
-}
 
-// Event Listener to close Modal with Escape
-window.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
-    hideDetails();
-  }
-});
-
-modalContainer.addEventListener('click', (e) => {
-  let target = e.target;
-  if (target === modalContainer) {
-    hideDetails();
-  }
-});
 
   return {
     add: add,
