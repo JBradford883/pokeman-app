@@ -101,7 +101,6 @@ function showDetails(pokemon) {
 }
 
 
-
   return {
     add: add,
     getAll: getAll,
