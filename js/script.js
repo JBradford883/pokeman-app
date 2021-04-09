@@ -60,7 +60,35 @@ let pokemonRepository = (function createPokemonRepository () {
     });
   }
 
+// Function to log Pokemon Details to console
+function showDetails(pokemon) {
 
+  loadDetails(pokemon).then(function() {
+    let modalBody = $('.modal-body');
+    let modalTitle = $('.modal-title');
+
+    modalTitle.empty();
+    modalBody.empty();
+
+    //Pokemon Name
+    let pokemonName = $('<h1>' + pokemon.name + '</h1>');
+
+    //Pokemon Image
+    let pokemonImage = $('<img class="modal-img" style="width=75%">');
+    pokemonImage.attr('src', pokemon.imageUrl);
+
+    //Pokemon Height
+    let pokemonHeight = $(`<p>Height: ${pokemon.height}m</p>`,);
+
+    //Pokemon Weight
+    let pokemonWeight = $(`<p>Weight ${pokemon.weight}kg</p>`,);
+
+    //Append Elements
+    modalTitle.append(pokemonName);
+    modalBody.append(pokemonImage);
+    modalBody.append(pokemonHeight);
+    modalBody.append(pokemonWeight);
+  });
 }
 
 
