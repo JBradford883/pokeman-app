@@ -14,23 +14,31 @@
 
   <body>
 
-    <div class="container-fluid">
-
-      <header class="page-header">
+    <div class="container">
 
         <!-- Nav bar -->
-        <nav class="navbar navbar-dark bg-dark">
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-danger">
+
           <a class="navbar-brand">
-          <img src="img/pokemon_logo.svg" class="pokemon-logo" alt="Offical Pokemon Logo"></a>
-          <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search Pokemon" aria-label="Search">
-          </form>
+            <img src="img/pokemon_logo.svg" class="pokemon-logo" alt="Offical Pokemon Logo">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+
+            <form class="form-inline ml-auto">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search Pokemon" aria-label="Search">
+            </form>
+
+          </div>
+
         </nav>
 
-      </header>
-
         <!-- Pokemon List -->
-        <ul class="col-7 list-group"></ul>
+        <ul class="col-sm list-group"></ul>
 
 
         <!-- Modal for Pokemon Info -->

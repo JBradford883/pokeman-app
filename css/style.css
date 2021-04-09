@@ -10,6 +10,14 @@ body {
   font-family: var(--headline-font);
 }
 
+h1 {
+  text-transform: capitalize;
+  font-family: var(--headline-font);
+  font-size: 50px;
+  line-height: 40px;
+  padding-top: 10px;
+}
+
 .pokemon-logo {
   height: 70px;
 }
