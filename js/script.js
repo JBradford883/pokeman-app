@@ -12,18 +12,26 @@ let pokemonRepository = (function createPokemonRepository () {
   }
 
   //Creates List and Buttons in the DOM
-  function addListItem(pokemon){
-    let pokemonList = document.querySelector('.pokemon-list');
-    let listPokemon = document.createElement('li');
+  function addListItem(pokemon) {
+    let pokemonList = document.querySelector('.list-group');
+    let listItem = document.createElement('li');
+
+    listItem.classList.add('list-group-item');
+    listItem.classList.add('list-group-item-action');
+
     let button = document.createElement('button');
-
-    //Adds Pokemon Name to Buttons
     button.innerText = pokemon.name;
-    button.classList.add('button-class');
+    button.classList.add('btn');
+    button.classList.add('btn-block');
+    button.setAttribute('data-target', '#pokemonModal');
+    button.setAttribute('data-toggle', 'modal');
 
-    listPokemon.appendChild(button);
-    pokemonList.appendChild(listPokemon);
-    pokemonListListener(button, pokemon);
+    listItem.appendChild(button);
+    pokemonList.appendChild(listItem);
+
+    button.addEventListener('click', function() {
+      showDetails(pokemon);
+    });
   }
 
   //Loads List of Pokemon
