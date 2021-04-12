@@ -38,7 +38,7 @@ h1 {
 
 .list-group {
   font-family: var(--headline-font);
-  margin-top: 90px;
+  margin: 90px;
   padding: 0;
 }
 
