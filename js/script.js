@@ -24,6 +24,7 @@ let pokemonRepository = (function createPokemonRepository () {
     let button = document.createElement('button');
     button.innerText = pokemon.name;
     button.classList.add('btn');
+    button.classList.add('btn-modal');
     button.classList.add('btn-block');
     button.setAttribute('data-target', '#pokemonModal');
     button.setAttribute('data-toggle', 'modal');
@@ -84,7 +85,7 @@ function showDetails(pokemon) {
     let pokemonName = $('<h1>' + pokemon.name + '</h1>');
 
     //Pokemon Image
-    let pokemonImage = $('<img class="modal-img" style="width=75%">');
+    let pokemonImage = $('<img class="modal-img">');
     pokemonImage.attr('src', pokemon.imageUrl);
 
     //Pokemon Height
