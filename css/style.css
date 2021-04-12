@@ -34,10 +34,6 @@ footer {
   border-radius: 3px;
 }
 
-.pokemon-logo {
-  height: 70px;
-}
-
 .btn {
   text-transform: capitalize;
   font-size: 25px;
