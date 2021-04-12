@@ -2,6 +2,7 @@
 let pokemonRepository = (function createPokemonRepository () {
   let pokemonList = [];
   let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
+  let searchInput = document.querySelector('#search-bar');
 
   // Add Pokemon from Api
   function add(pokemon) {
@@ -101,6 +102,20 @@ function showDetails(pokemon) {
     modalBody.append(pokemonWeight);
   });
 }
+
+searchInput.addEventListener('input', function(){
+  let pokemonList = document.querySelectorAll('.list-group-item');
+  let filterValue = searchInput.value.toUpperCase();
+
+  pokemonList.forEach(function(pokemon){
+    console.log(pokemon.innerText);
+    if(pokemon.innerText.toUpperCase().indexOf(filterValue) > -1){
+      pokemon.style.display = '';
+    } else{
+      pokemon.style.display = 'none';
+    }
+  })
+});
 
 
   return {
