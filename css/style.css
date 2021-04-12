@@ -43,7 +43,7 @@ footer {
   text-transform: capitalize;
   font-size: 25px;
   font-family: var(--headline-font);
-  color: #dc3545;
+  color: #fff;
 }
 
 .list-group {
