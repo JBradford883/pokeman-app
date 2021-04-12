@@ -10,7 +10,6 @@ body {
 }
 
 h1 {
-  color: #000;
   text-transform: capitalize;
   font-family: var(--headline-font);
   font-size: 50px;
