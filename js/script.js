@@ -95,9 +95,7 @@ function showDetails(pokemon) {
 
     //Append Elements
     modalTitle.append(pokemonName);
-    modalBody.append(pokemonImage);
-    modalBody.append(pokemonHeight);
-    modalBody.append(pokemonWeight);
+    modalBody.append(pokemonImage, pokemonHeight, pokemonWeight);
   });
 }
 
