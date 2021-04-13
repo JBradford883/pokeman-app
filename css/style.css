@@ -25,8 +25,8 @@ h1 {
 .list-group-bg {
   padding: 0;
   background-color: #dc3545;
-  margin-bottom: 10px;
   border-radius: 3px;
+  margin: 5px;
 }
 
 .list-group {
