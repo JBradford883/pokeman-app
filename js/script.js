@@ -1,7 +1,7 @@
 //IIFE with Pokemon Repository
 let pokemonRepository = (function createPokemonRepository () {
   let pokemonList = [];
-  let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
+  let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=300';
   let searchInput = document.querySelector('#search-bar');
 
   // Add Pokemon from Api
