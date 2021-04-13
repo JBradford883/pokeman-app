@@ -29,17 +29,17 @@ h1 {
   border-radius: 3px;
 }
 
+.list-group {
+  font-family: var(--headline-font);
+  margin: 80px 0 80px 0;
+  flex-direction: row;
+}
+
 .btn {
   text-transform: capitalize;
   font-size: 25px;
   font-family: var(--headline-font);
   color: #fff;
-}
-
-.list-group {
-  font-family: var(--headline-font);
-  margin: 90px;
-  padding: 0;
 }
 
 .modal-body {
