@@ -48,8 +48,6 @@ let pokemonRepository = (function createPokemonRepository () {
         };
         add(pokemon);
       });
-    }).catch(function (e) {
-      console.error(e);
     })
   }
 
@@ -65,9 +63,7 @@ let pokemonRepository = (function createPokemonRepository () {
       item.height = details.height;
       item.weight = details.weight;
       item.types = details.types;
-    }).catch(function (e) {
-      console.error(e);
-    });
+    })
   }
 
 // Function to log Pokemon Details to console
@@ -88,10 +84,10 @@ function showDetails(pokemon) {
     pokemonImage.attr('src', pokemon.imageUrl);
 
     //Pokemon Height
-    let pokemonHeight = $(`<p>Height: ${pokemon.height}m</p>`,);
+    let pokemonHeight = $(`<p>Height: ${pokemon.height}m</p>`);
 
     //Pokemon Weight
-    let pokemonWeight = $(`<p>Weight ${pokemon.weight}kg</p>`,);
+    let pokemonWeight = $(`<p>Weight ${pokemon.weight}kg</p>`);
 
     //Append Elements
     modalTitle.append(pokemonName);
@@ -104,7 +100,6 @@ searchInput.addEventListener('input', function(){
   let filterValue = searchInput.value.toUpperCase();
 
   pokemonList.forEach(function(pokemon){
-    console.log(pokemon.innerText);
     if(pokemon.innerText.toUpperCase().indexOf(filterValue) > -1){
       pokemon.style.display = '';
     } else{
